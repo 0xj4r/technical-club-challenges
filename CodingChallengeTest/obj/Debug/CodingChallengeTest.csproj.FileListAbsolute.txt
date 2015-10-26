@@ -1,0 +1,5 @@
+c:\users\jransom\documents\visual studio 2013\Projects\CodingChallenge\CodingChallengeTest\bin\Debug\CodingChallengeTest.dll
+c:\users\jransom\documents\visual studio 2013\Projects\CodingChallenge\CodingChallengeTest\bin\Debug\CodingChallengeTest.pdb
+c:\users\jransom\documents\visual studio 2013\Projects\CodingChallenge\CodingChallengeTest\obj\Debug\CodingChallengeTest.csprojResolveAssemblyReference.cache
+c:\users\jransom\documents\visual studio 2013\Projects\CodingChallenge\CodingChallengeTest\obj\Debug\CodingChallengeTest.dll
+c:\users\jransom\documents\visual studio 2013\Projects\CodingChallenge\CodingChallengeTest\obj\Debug\CodingChallengeTest.pdb
