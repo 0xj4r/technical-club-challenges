@@ -64,15 +64,15 @@ namespace CodingChallengeTest
         [TestMethod]
         public void WriteOutputFile()
         {
-            var inputFileId = "input_1"; 
+            var inputFileId = "input_1.txt"; 
             var printer = new OutputPrinter();
             var inputFileList = new List<string> { "test", "input", "text" }; 
             printer.printOutputList(inputFileList, inputFileId);
-            var reader = new StreamReader(@"C:\temp\output_1.txt");
+            var reader = new StreamReader(@"output_1.txt");
             var outputText = reader.ReadToEnd();
             reader.Close();
             Assert.AreEqual("test\r\ninput\r\ntext\r\n", outputText);
-            File.Delete(@"C:\temp\output_1.txt"); 
+            File.Delete(@"output_1.txt"); 
         }
     }
 }

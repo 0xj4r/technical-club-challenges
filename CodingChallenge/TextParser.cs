@@ -22,8 +22,8 @@ namespace CodingChallenge
 
         public List<string> ParseString(string tempString)
         {
-            var cleanString = Regex.Replace(tempString, "[^0-9a-zA-Z']+", " ");
-            return cleanString.Split().Distinct().ToList(); 
+            var cleanString = Regex.Replace(tempString.ToLower(), "[^0-9a-zA-Z']+", " ");
+            return cleanString.Split().Where(s => !string.IsNullOrWhiteSpace(s)).Distinct().ToList(); 
         }
 
         public List<string> ParseSortedList(string listString)

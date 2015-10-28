@@ -9,7 +9,7 @@ using CodingChallenge;
 namespace CodingChallengeTest
 {
     /// <summary>
-    /// Summary description for InputReaderTests
+    /// InputReaderTests
     /// </summary>
     [TestClass]
     public class InputReaderTests
@@ -65,15 +65,12 @@ namespace CodingChallengeTest
         public void ReadSingleInputFile()
         {
             var writer = new StreamWriter(@"C:\temp\input_1.txt");
-            writer.WriteLine("input\r\ntest\r\none"); 
+            writer.Write("input\r\ntest\r\none\r\n");  
             writer.Close();
             var reader = new InputReader();
             var readerString = reader.readFile(@"C:\temp\input_1.txt");
             Assert.AreEqual("input\r\ntest\r\none\r\n", readerString);
             File.Delete(@"C:\temp\input_1.txt"); 
-
-
-
         }
     }
 }

@@ -17,8 +17,8 @@ namespace CodingChallenge
 
         public void printOutputList(List<string> inputFileList, string inputFileId)
         {
-            var inputId = Int32.Parse(inputFileId.Substring(6));
-            var outputWriter = new StreamWriter(@"C:\temp\output_" + inputId + ".txt");
+            var inputId = Int32.Parse(inputFileId.Substring(6, inputFileId.IndexOf('.') - 6));
+            var outputWriter = new StreamWriter(@"output_" + inputId + ".txt");
             foreach (string s in inputFileList)
             {
                 outputWriter.WriteLine(s);
